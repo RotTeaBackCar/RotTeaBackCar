@@ -38,4 +38,18 @@ p {
     align-content: center;
     justify-content: center;
  }
+ table {
+    border-collapse: collapse;
+    width: 90%;
+  }
+  th,td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #dadada;
+    color: blac;
+    text-align: center;
+  }
 
