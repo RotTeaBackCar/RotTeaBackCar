@@ -4,25 +4,34 @@
     justify-content: space-between;
     margin: 20px;
   }
-.nav-container {
-    border: 2px solid #1b1b19;
-    display: flex;
-    padding: 8px;
-    justify-content: right; /*menyesuaikan box navigation disini*/
-    text-align: center;
-    font-size: 16px;
-    color: black;
-    /*border: 1px solid;*/
-    border-radius: 8px;
-    background-color: rgb(247, 247, 247);
+.box-container {
+    display: flex; 
+    justify-content: flex-end;
+    /* border-radius: 10px; */
+    border: 1px solid black;
+    padding: 10px;
 }
+.text-container {
+  display: flex;
+  flex-direction: column;
+
+}
+.box {
+    width: 100px;
+    height: 20px;
+    background-color: rgb(231, 192, 146);
+    border: 2px solid black;
+    /* border-radius: 10px; */
+    padding: 10px;
+    text-align: center;
+} 
 .garbage-icon {
     width: 20px;
     height: 20px;
   }
 .nav-icon {
-    width: 41px;
-    height: 42px;
+    width: 40px;
+    height: 40px;
     margin-right: auto;
     border-radius: 32px;
 }  
@@ -30,11 +39,24 @@
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgb(231, 192, 146);
+  }
+footer {
+  text-align: right;
+  padding: 20px;
+  
+}
+  h1 {
+    margin-bottom: 10px;
+    text-align: left;
   }
   
   h2 {
     text-align: center;
+  }
+  p {
+    margin-top: 10px;
+    text-align: left;
   }
   
   table {
