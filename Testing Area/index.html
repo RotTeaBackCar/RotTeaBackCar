@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Latihan 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="nav-container">
+        <img src="capture.jpeg" alt="icon" class="nav-icon">
+        <div class="home">Home</div>
+        <div class="search">Search</div>
+        <div class="logout">Log out</div>
+    </nav>
+
+
+  <div class="container">
+<!--Division di bawah mendeklarasikan Form Isian-->    
+    <div class="form-container">
+      <h2>Form Pengisian Nama</h2>
+      <form>
+        <label for="nama">Nama</label>
+        :&nbsp;<input type="text" id="nama" name="nama">
+        <br>
+        <label for="tgllahir">Tanggal Lahir</label>
+        :&nbsp;<input type="text" id="tgllahir" name="tgllahir">
+        <br>
+        <label for="kelamin" id="kelamin">Jenis Kelamin</label>
+        :&nbsp;<input type="radio" name="kelamin" id="kelamin">Pria
+        <input type="radio" name="kelamin" id="kelamin">Wanita
+        <br>
+        <div class="form-group">
+            <label for="pesan" id="pesan">Pesan</label>
+            :&nbsp;<textarea name="pesan" id="pesan" rows="5" cols="30" placeholder="Ketik disini"></textarea>
+        </div>
+        <br>
+        <button type="submit">Kirim</button>
+      </form>
+    </div>
+
+<!--Division di bawah mendeklarasikan Tabel Isian-->    
+    <div class="table-container">
+      <h2>Tabel Isian</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nama</th>
+            <th>Tanggal Lahir</th>
+            <th>Jenis Kelamin</th>
+            <th>Pesan</th>
+            <th>Profile</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Yoga Budhi</td>
+            <td>24 April 1990</td>
+            <td>Pria</td>
+            <td>Halo</td>
+            <td><a href="http://www.google.com">Klik Disini!</a></td>
+            <td><img src="Garbage Icon.png" alt="icon" class="garbage-icon"></td>
+          </tr>
+          <tr>
+            <td>Anisa</td>
+            <td>24 Mei 1999</td>
+            <td>Wanita</td>
+            <td>Heiii</td>
+            <td><a href="http://www.google.com">Klik Disini!</a></td>
+            <td><img src="Garbage Icon.png" alt="icon" class="garbage-icon"></td>
+          </tr>
+          <tr>
+            <td>Nia</td>
+            <td>17 Mei 1989</td>
+            <td>Wanita</td>
+            <td>Samlekum</td>
+            <td><a href="http://www.google.com">Klik Disini!</a></td>
+            <td><img src="Garbage Icon.png" alt="icon" class="garbage-icon"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
