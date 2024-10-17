@@ -81,7 +81,14 @@ footer {
     display: flex;
     align-items: flex-start;
 }
-  
+button {
+  width: 386px;
+  height: 30px;
+  background-color: rgb(231, 192, 146);
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgb(231, 192, 146);
+}
+ 
   /* Responsivitas */
 /*  @media (max-width: 768px) {
     .container {
