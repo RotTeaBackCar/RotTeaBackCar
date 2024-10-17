@@ -1,16 +1,41 @@
-p {
-    color: blue;
-}
 .container {
     border: 2px solid #1b1b19;
     display: flex;
-    justify-content: flex-end; /*menyesuaikan box navigation disini*/
+    padding: 8px;
+    justify-content: right; /*menyesuaikan box navigation disini*/
 }
 .container > div {
-    padding: 10px;
+    padding: 8px;
     text-align: center;
-    font-size: 14sp;
-    color: white;
+    font-size: 16px;
+    color: black;
     border: 1px solid;
-    background-color: rgb(75, 25, 212);
+    border-radius: 8px;
+    background-color: rgb(247, 247, 247);
 }
+.nav-icon {
+    width: 41px;
+    height: 42px;
+    margin-right: auto;
+    border-radius: 32px;
+}
+h1 {
+    font-size: 32px;
+    padding-left: 55px;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 16px;
+    padding-left: 55px;
+    margin-top: 10px;
+}
+ main {
+    flex-direction: row;display: flex;
+ }
+ .divcontent {
+    display: flex;
+    flex: 1;
+    align-content: center;
+    justify-content: center;
+ }
+
