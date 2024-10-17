@@ -3,13 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form Input Paragraf</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        /* Container untuk label dan textarea diatur dengan flex */
+        .form-group {
+            display: flex;
+            align-items: flex-start; /* Agar textarea dan label tetap sejajar di bagian atas */
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-right: 10px;
+            width: 150px; /* Atur lebar label agar tidak terlalu kecil */
+            text-align: left;
+        }
+
+        textarea {
+            flex: 1; /* Mengambil sisa ruang yang tersedia */
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical; /* Membolehkan pengguna untuk mengubah tinggi area teks */
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
 </head>
-<body> 
-    <h1>This is Header 1 </h1>
-    <h2>This is Header 2</h2>
-    <p>This is paragraph 1</p>
-    <p>This is paragraph 2</p>
-    <p>This is paragraph 3</p>
+<body>
+
+    <form>
+        <div class="form-group">
+            <label for="message">Pesan Anda:</label> <!-- Label tetap di kiri -->
+            <textarea id="message" name="message" placeholder="Masukkan paragraf Anda di sini..."></textarea> <!-- Textarea di kanan -->
+        </div>
+        
+        <button type="submit">Kirim</button>
+    </form>
+
 </body>
 </html>
