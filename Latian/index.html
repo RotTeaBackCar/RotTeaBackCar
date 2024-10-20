@@ -1,43 +1,42 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang Saya</title>
-    <link rel="stylesheet" href="style.css"> </head>
+  <title>Contact Me</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    .contact-form {
+      width: 50%;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+    .contact-form input[type="text"],
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+    }
+    .contact-form button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
 <body>
-    <header>
-        <h1>Tentang Saya</h1>
-    </header>
-
-    <main>
-        <section id="profile-picture">
-            <img src="foto-profil.jpg" alt="Foto Profil">
-        </section>
-
-        <section id="about">
-            <h2>Siapa Saya?</h2>
-            <p>
-                Tuliskan paragraf perkenalan singkat tentang dirimu di sini. Ceritakan sedikit tentang latar belakang, minat, dan pengalamanmu.
-            </p>
-
-            <h2>Keahlian</h2>
-            <ul>
-                <li>Keahlian 1</li>
-                <li>Keahlian 2</li>
-                <li>Keahlian 3</li>
-            </ul>
-
-            <h2>Proyek</h2>
-            <p>
-                Sebutkan proyek-proyek yang pernah kamu kerjakan. Kamu bisa menambahkan link ke portofolio atau repositori Git jika ada.
-            </p>
-        </section>
-    </main>
-
-    <footer>
-        
-    </footer>
-
-    <script src="script.js"></script> </body>
+  <h2>Hubungi Saya</h2>
+  <div class="contact-form">
+    <input type="text" name="name" placeholder="Nama Anda" required>
+    <input type="email" name="email" placeholder="Alamat Email Anda" required>
+    <textarea name="message" placeholder="Pesan Anda"></textarea>
+    <button type="submit">Kirim</button>
+  </div>
+</body>
 </html>

@@ -1,14 +1,13 @@
-/* style.css */
-body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
+.gambar-container {
+  display: flex;
+  justify-content: flex-end;
 }
 
-#profile-picture img {
-  width: 200px;
-  border-radius: 50%;
+.gambar {
+  text-align: center;
 }
 
-section {
-  margin-bottom: 20px;
+.gambar img {
+  max-width: 200px;
+  height: auto;
 }
