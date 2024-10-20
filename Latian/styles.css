@@ -1,0 +1,14 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+#profile-picture img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+section {
+  margin-bottom: 20px;
+}
