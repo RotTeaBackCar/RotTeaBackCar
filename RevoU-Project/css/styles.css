@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+
   }
   
   body {
@@ -13,8 +15,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
+    background-color: #1a0770;
+    color: white;
+  }
+  h3 {
+    margin-top: 10px;
   }
   
   .logo {
@@ -48,17 +53,26 @@
     background-color: white;
     margin: 4px 0;
   }
+  .nav-icon {
+    width: auto;
+    height: 40px;
+    margin-right: 8px;
+    border-radius: 4px;
+    display: flex;
+  }
   
   @media (max-width: 768px) {
     nav ul {
       display: none;
       flex-direction: column;
-      background-color: #333;
+      background-color: #1a0770;
       position: absolute;
       top: 60px;
       right: 0;
       width: 100%;
       text-align: center;
+      border-top: 4px solid white;
+      gap: 8px;
     }
   
     nav ul.active {
@@ -69,4 +83,5 @@
       display: flex;
     }
   }
+ 
   
