@@ -11,6 +11,9 @@
   }
   
   header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,10 +21,37 @@
     background-color: #1a0770;
     color: white;
   }
+    
+  .slider {
+    width: auto; /* Bisa di set nanti 1366px */
+    height: 578px;
+    overflow: hidden;
+   
+  }
+  .slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    animation: slide 30s infinite;
+  }
+  .slides img {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+}
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
   h3 {
     margin-top: 10px;
   }
-  
+
   .logo {
     font-size: 24px;
     font-weight: bold;
@@ -39,6 +69,7 @@
   nav ul li a {
     text-decoration: none;
     color: white;
+  
   }
   
   .menu-toggle {
@@ -66,55 +97,27 @@
       display: none;
       flex-direction: column;
       background-color: #1a0770;
-      position: absolute;
+      position:absolute;
       top: 60px;
       right: 0;
       width: 100%;
       text-align: center;
       border-top: 4px solid white;
-      gap: 8px;
+      gap: 4px;
+            
     }
   
     nav ul.active {
       display: flex;
+       
     }
-  
+
     .menu-toggle {
       display: flex;
+         
     }
   }
-  .slider {
-    width: auto; /* Bisa di set nanti 1366px */
-    height: 578px;
-    overflow: hidden;
-  }
-  .slides {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    animation: slide 30s infinite;
-  }
-  .slides img {
-  width: 100%;
-  height: 100%;
-}
-  .text-overlay {
-    position: absolute;
-    top: 100px; /* Jarak dari atas */
-    left: 20px; /* Jarak dari kiri */
-    color: white;
-    padding: 10px;
-    font-size: 32px;
-    font-family: verdana;
-}
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-}
-  100% {
-    transform: translateX(-200%);
-  }
-}
+
 .section-about {
   display: flex;
   justify-content: space-around;
@@ -129,4 +132,14 @@
   padding: 20px;
   border-radius: 25px;
 
+}  
+
+  .text-overlay {
+    position: absolute;
+    top: 100px; /* Jarak dari atas */
+    left: 20px; /* Jarak dari kiri */
+    color: black;
+    padding: 10px;
+    font-size: 32px;
+    font-family: verdana;
 } 
