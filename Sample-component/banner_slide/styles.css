@@ -1,0 +1,32 @@
+
+.slider {
+    width: auto; /* Bisa di set nanti 1366px */
+    height: 578px;
+    overflow: hidden;
+  }
+  .slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    animation: slide 30s infinite;
+  }
+.slides img {
+  width: 100%;
+  height: 100%;
+}
+.text-overlay {
+    position: absolute;
+    top: 100px; /* Jarak dari atas */
+    left: 20px; /* Jarak dari kiri */
+    color: white;
+    padding: 10px;
+    font-size: 32px;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+}
+  100% {
+    transform: translateX(-200%);
+  }
+}
