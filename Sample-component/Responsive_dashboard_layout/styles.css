@@ -13,7 +13,7 @@ body{
     grid-template-areas: 
     'sidebar header'
     'sidebar main'
-    'footer footer';
+    'sidebar footer';
 
     transition: grid-template-columns 0.5s ease;
 }
@@ -44,6 +44,31 @@ body.sb-expand {
     grid-area: main;
     padding: 1.25rem;
 
+    display: grid;
+    gap: 1rem;
+
+}
+
+@media (min-width: 768px) {
+    .dashboard-main {
+        grid-template-columns: repeat (4,1fr);
+}
+}
+
+.card {
+    padding: 1rem;
+    min-block-size: 7rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+}
+
+.card-1 {
+    background-image: 
+    linear-gradient(
+        62deg,
+        #fbab7e 0%,
+        #f7ce68 100%
+    );
 }
 
 .dashboard-sidebar {
