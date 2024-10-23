@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Isian</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <!-- Wrapper untuk form dan output -->
+ <div style="display: flex; flex-direction: row; flex: 1;">
+    <form id="dataForm">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" required>
+
+        <label for="dob">Tanggal Lahir:</label>
+        <input type="date" id="dob" required>
+
+        <label for="gender">Jenis Kelamin:</label>
+        <select id="gender" required>
+            <option value="">Pilih...</option>
+            <option value="Laki-laki">Laki-laki</option>
+            <option value="Perempuan">Perempuan</option>
+        </select>
+
+        <label for="message">Pesan:</label>
+        <textarea id="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="output" style="display: none;"></div>
+</div>    
+</body>
+<script src="scripts.js"></script>
+</html>
