@@ -3,3 +3,18 @@
   align-items: center;
   margin-bottom: 15px;
 }
+
+.gender-container label {
+  margin-right: 15px;
+}
+
+.gender-options {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  white-space: nowrap;
+}
+
+.gender-options input [type="radio"] {
+  margin-right: 5px;
+}
