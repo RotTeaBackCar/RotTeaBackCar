@@ -51,8 +51,8 @@ body.sb-expand {
 
 @media (min-width: 768px) {
     .dashboard-main {
-        grid-template-columns: repeat (4,1fr);
-}
+        grid-template-columns: repeat (4, 1fr);
+    }
 }
 
 .card {
