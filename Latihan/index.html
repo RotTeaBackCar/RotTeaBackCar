@@ -1,93 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Latihan 1</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radio Button</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-<!-- Mendeklarasikan navigation box -->
-  <nav class="box-container">
-        <img src="capture.jpeg" alt="icon" class="nav-icon">
-        <div class="box">Home</div>
-        <div class="box">My Profile</div>
-        <div class="box">Portfolio</div>
-        <div class="box">Contact Me!</div>
-  </nav>
-
-<!-- Deklarasi Text Judul setelah navigasi -->
- <h1 class="text-container">&nbsp;&nbsp;Form Belajar</h1>
- <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ini adalah website latihan Pertama</p>
-
-<!-- Deklarasi Content Form dan Tabel -->   
+  <label for="gender"> Jenis Kelamin</label>
   <div class="container">
-
-<!-- Deklarasi Form -->
-    <div class="form-container">
-      <h2>Form Pengisian Nama</h2>
-      <form>
-        <label for="nama">Nama</label>
-        :&nbsp;<input type="text" id="nama" name="nama">
-        <br>
-        <label for="tgllahir">Tanggal Lahir</label>
-        :&nbsp;<input type="text" id="tgllahir" name="tgllahir">
-        <br>
-        <label for="kelamin" id="kelamin">Jenis Kelamin</label>
-        :&nbsp;<input type="radio" name="kelamin" id="kelamin">Pria
-        <input type="radio" name="kelamin" id="kelamin">Wanita
-        <br>
-        <div class="form-group">
-            <label for="pesan" id="pesan">Pesan</label>
-            :&nbsp;<textarea name="pesan" id="pesan" rows="5" cols="30" placeholder="Ketik disini"></textarea>
-        </div>
-        <br>
-        <button type="submit">Kirim</button>
-      </form>
-    </div>
-
-<!--Division di bawah mendeklarasikan Tabel Isian-->    
-    <div class="table-container">
-      <h2>Tabel Isian</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Nama</th>
-            <th>Tanggal Lahir</th>
-            <th>Jenis Kelamin</th>
-            <th>Pesan</th>
-            <th>Profile</th>
-            <th>Delete</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Yoga Budhi</td>
-            <td>24 April 1990</td>
-            <td>Pria</td>
-            <td>Halo</td>
-            <td><a href="http://www.google.com">Klik Disini!</a></td>
-            <td><img src="Garbage Icon.png" alt="icon" class="garbage-icon"></td>
-          </tr>
-          <tr>
-            <td>Anisa</td>
-            <td>24 Mei 1999</td>
-            <td>Wanita</td>
-            <td>Heiii</td>
-            <td><a href="http://www.google.com">Klik Disini!</a></td>
-            <td><img src="Garbage Icon.png" alt="icon" class="garbage-icon"></td>
-          </tr>
-          <tr>
-            <td>Nia</td>
-            <td>17 Mei 1989</td>
-            <td>Wanita</td>
-            <td>Samlekum</td>
-            <td><a href="http://www.google.com">Klik Disini!</a></td>
-            <td><img src="Garbage Icon.png" alt="icon" class="garbage-icon"></td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="gender-option">
+      <input type="radio" id="male" name="gender" value="Laki-laki">
+      <label for="male"> Laki-laki</label>
+      <input type="radio" id="female" name="gender" value="Wanita">
+      <label for="female"> Wanita</label>
     </div>
   </div>
-<footer><u>Created by: RotTeaBackCar</u></footer>
+  
+
+
+  
 </body>
 </html>
